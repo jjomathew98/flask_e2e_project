@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+    <section>
+        <h2 class="text-xl mb-2"> Dive into comprehensive insights on ischemic stroke treatment in California hospitals with our interactive dataset preview. Uncover risk-adjusted 30-day mortality and 30-day readmission rates, quality ratings, and detailed statistics on the number of deaths, readmissions, and cases. Please note that this dataset focuses exclusively on inpatient settings, excluding information on ischemic stroke treated in outpatient setting</h2>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">County</th>
+                    <th class="px-4 py-2">Hospital</th>
+                    <th class="px-4 py-2">Measure</th>
+                    <th class="px-4 py-2">Risk Adjusted Rate</th>
+                    <th class="px-4 py-2"># of Deaths/Readmissions</th>
+                    <th class="px-4 py-2"># of Cases</th>
+                    <th class="px-4 py-2">Hospital Ratings</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in data %}
+                <tr>
+                    <td class="border px-4 py-2">{{ data.County }}</td>
+                    <td class="border px-4 py-2">{{ data.Hospital }}</td>
+                    <td class="border px-4 py-2">{{ data.Measure }}</td>
+                    <td class="border px-4 py-2">{{ data.Risk_Adjusted_Rate }}</td>
+                    <td class="border px-4 py-2">{{ data['#_of_Deaths/Readmissions'] }}</td>
+                    <td class="border px-4 py-2">{{ data['#_of_Cases'] }}</td>
+                    <td class="border px-4 py-2">{{ data.Hospital_Ratings }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+{% endblock %}
