@@ -1,6 +1,6 @@
 # flask_e2e_project
 
-For this final project, I am using external data from data.gov (https://catalog.data.gov/dataset/ischemic-stroke-30-day-mortality-and-30-day-readmission-rates-and-quality-ratings-for-ca-h-b8d33) which  is cleaned in a google colab environment, which is included in db/ folder. The data is then brought to a MySQL workbench database (finalproject), and used in the flask app to display the value information about the Ischemic Stroke 30-Day Mortality and 30-Day Readmission Rates and Quality Ratings for CA Hospitals. 
+For this final project, I am using external data from data.gov (https://catalog.data.gov/dataset/ischemic-stroke-30-day-mortality-and-30-day-readmission-rates-and-quality-ratings-for-ca-h-b8d33) which  is cleaned in a google colab environment, which is included in db/ folder. The data is then brought to a MySQL workbench database (finalproject), and the stored data is then used in the flask app to display the valuable information about the Ischemic Stroke 30-Day Mortality and 30-Day Readmission Rates and Quality Ratings for CA Hospitals. 
 
 ## Technologies used for final assignment:  
       - Github (Version Control)
